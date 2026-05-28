@@ -303,3 +303,9 @@ class LockRecordView(APIView):
         return Response({
             "message": "Record Locked"
         })
+
+
+from django.http import HttpResponse
+
+def test(request):
+    return HttpResponse("Railway Working")

@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import *
-
+from .views import test
 urlpatterns = [
 
     path(
@@ -34,4 +34,5 @@ urlpatterns = [
         "lock/<int:pk>/",
         LockRecordView.as_view()
     ),
+    path("", test),
 ]

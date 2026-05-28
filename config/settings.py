@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://breathe-esg-assignment-production-d29b.up.railway.app"
+    "https://*.up.railway.app"
 ]
 
 # Application definition
