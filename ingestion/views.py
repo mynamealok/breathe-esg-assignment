@@ -3,7 +3,7 @@ from rest_framework import generics
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
+from .models import ActivityRecord
 from .models import *
 from .serializers import ActivityRecordSerializer
 
@@ -209,7 +209,7 @@ class TravelUploadView(APIView):
 
 class ActivityListView(generics.ListCreateAPIView):
 
-    def get(self, request):
+    '''def get(self, request):
 
         records = ActivityRecord.objects.all()
 
@@ -218,7 +218,10 @@ class ActivityListView(generics.ListCreateAPIView):
             many=True
         )
 
-        return Response(serializer.data)
+        return Response(serializer.data)'''
+    queryset = ActivityRecord.objects.all()
+    serializer_class = ActivityRecordSerializer
+
 
 
 class IssueListView(APIView):
