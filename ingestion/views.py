@@ -1,4 +1,5 @@
 import pandas as pd
+from rest_framework import generics
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -206,7 +207,7 @@ class TravelUploadView(APIView):
         })
 
 
-class ActivityListView(APIView):
+class ActivityListView(generics.ListCreateAPIView):
 
     def get(self, request):
 
