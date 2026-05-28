@@ -51,12 +51,9 @@ python manage.py migrate
 ## Live Links
 
 Frontend:
-https://your-vercel-link.vercel.app
-
+https://breathe-esg-assignment-k5u2.vercel.app/
 Backend API:
-https://your-railway-link.up.railway.app/api/records/
-
-python manage.py runserver
+https://breathe-esg-assignment-production-5f11.up.railway.app/api/records/
 
 ## Run Frontend
 
