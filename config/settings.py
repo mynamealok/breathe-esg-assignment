@@ -25,8 +25,11 @@ SECRET_KEY = "django-insecure-s!@i*%g2dni_z@gfn8!mj+hx8$89=@64zuz$sawfxgw@kbff$u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["breathe-esg-assignment-production-d29b.up.railway.app"]
+ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://breathe-esg-assignment-production-d29b.up.railway.app"
+]
 
 # Application definition
 
@@ -120,3 +123,8 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 CORS_ALLOW_ALL_ORIGINS = True
+STATIC_URL = 'static/'
+
+import os
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
