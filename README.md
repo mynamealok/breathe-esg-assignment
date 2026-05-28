@@ -48,6 +48,14 @@ pip install -r requirements.txt
 
 python manage.py migrate
 
+## Live Links
+
+Frontend:
+https://your-vercel-link.vercel.app
+
+Backend API:
+https://your-railway-link.up.railway.app/api/records/
+
 python manage.py runserver
 
 ## Run Frontend
