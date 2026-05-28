@@ -56,7 +56,9 @@ class ActivityRecord(models.Model):
 
     raw_record = models.ForeignKey(
         RawRecord,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        null= True,
+        blank= True
     )
 
     activity_type = models.CharField(
