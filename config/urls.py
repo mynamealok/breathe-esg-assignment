@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.http import HttpResponse
 from django.urls import path, include
 
 urlpatterns = [
@@ -12,4 +13,5 @@ urlpatterns = [
         'api/',
         include('ingestion.urls')
     ),
+    path('', lambda request: HttpResponse("Backend Running Sucessfully")),
 ]
