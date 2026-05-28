@@ -52,6 +52,7 @@ python manage.py migrate
 
 Frontend:
 https://breathe-esg-assignment-k5u2.vercel.app/
+
 Backend API:
 https://breathe-esg-assignment-production-5f11.up.railway.app/api/records/
 
